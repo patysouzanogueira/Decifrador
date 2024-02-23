@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="./assests/favicon.png" type="imagem/png">
+
+    <title>Challenge Alura</title>
+</head>
+<body>
+  <div class="principal">
+    <header>
+      <img src="./assests/logoAlura.PNG.png" alt="Logotipo da Alura">
+    </header>
+    <main>
+      <textarea type="text" placeholder="Digite seu texto aqui"></textarea>
+      <p class="info">
+        <img src="./assests/info.png" alt="informacoes"> Apenas letras minúsculas e sem acento.
+      </p>
+      <div class="acoes">
+           <button
+              type="button" 
+              onclick="criptografar()"
+
+              class="button desabilitado"
+              id="botaoCripto" disabled>Criptografar
+           </button>
+
+           <button
+              type="button" 
+              onclick="descriptografar()"
+              class="button desabilitado"
+              id="botaoDescripto" disabled>Descriptografar
+           </button>
+      </div>
+      
+    </main>
+  </div>
+  <aside>
+    <img src="./assests/boneco.png.png" alt="imagem de busca">
+    <h2> Nenhuma mensagem encontrada</h2>
+    <p>Digite um texto que voce deseja criptografar ou descriptografar</p>
+      <span id="resultado">
+      </span>
+      <div>
+        <button
+        id="copiar"
+        onclick="copiar()"
+        type="button"
+        class="button copiar"> copiar
+      </button>
+      </div>
+  </aside>
+  <footer class="footer">
+    <p class="criador">Desenvolvido por Patricia
+      <a href="https://github.com/patysouzanogueira" target="_blank">
+        <img class="links" src="./assests/github.png">
+      </a>
+      <a href="https://www.linkedin.com/in/patr%C3%ADcia-souzafrontend/" target="_blank">
+        <img class="links" src="./assests/linkedin.png">
+      </a>
+    </p>
+   </footer>  
+
+  <script src="script.js"></script>
+</body>
+</html>
